@@ -1,0 +1,44 @@
+{
+    "technologies":[
+        {
+            "id": 1,
+            "name": "Javascript",
+            "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+        },
+        {
+            "id": 2,
+            "name": "HTML",
+            "url": "https://developer.mozilla.org/es/docs/Web/HTML"
+        },
+        {
+            "id": 3,
+            "name": "Css",
+            "url": "https://developer.mozilla.org/es/docs/Web/CSS"
+        },
+        {
+            "id": 4 ,
+            "name": "React",
+            "url": ""
+        },
+        {
+            "id": 5,
+            "name": "Tailwind Css",
+            "url": ""
+        },
+        {
+            "id": 6,
+            "name": "Strapi",
+            "url": ""
+        },{
+            "id": 7,
+            "name": "NextJs",
+            "url": ""
+        },
+        {
+            "id": 8,
+            "name": "VueJs",
+            "url": ""
+        }   
+    ]
+    
+}
