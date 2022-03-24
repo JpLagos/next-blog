@@ -8,11 +8,11 @@ const RecommendedRead = () => {
             <p className='text-base md:text-xl font-bold'>Recomendado:</p>
             <ul>
                 <li className='flex gap-5 text-base md:gap-10 md:text-xl text-stone-600'>
-                    <Link href="/posts/1">
-                        <a className='border-b-2 border-stone-200 
+                    <Link href="/posts/1"
+                        className='border-b-2 border-stone-200 
                                         hover:border-b-2
                                         hover:border-orange 
-                                        transition ease-in-out duration-500'>My first Post!</a>
+                                        transition ease-in-out duration-500'>My first Post!
                     </Link>
                     {/* <Link href="/posts">
                         <a className='border-b-2 border-stone-200 
