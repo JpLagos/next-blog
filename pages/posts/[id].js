@@ -3,11 +3,12 @@ import MarkdownIt from "markdown-it/lib";
 import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 import reactMarkdown from "react-markdown";
+import { API_URL } from "../../utils/urls";
 //ver que es mejor, react mark down o markdownit y renderizar correctamente el contenido que viene desde strapi.
 //Page for every post that we click on 
 const PostPage = ({post}) => {
     const {attributes} = post
-    const orig = 'http://localhost:1337'
+    const orig = `${API_URL}`
 
     const markdown = attributes.content
     
@@ -59,7 +60,7 @@ export default PostPage;
 
 export async function getStaticProps({params}){
     //obtain data
-    const postRes = await axios.get(`http://localhost:1337/api/posts/${params.id}?populate=*`);
+    const postRes = await axios.get(`${API_URL}/api/posts/${params.id}?populate=*`);
     return{
         props:{
              post: postRes.data.data
@@ -69,7 +70,7 @@ export async function getStaticProps({params}){
 
 export async function getStaticPaths(){
     //obtain id
-    const postRes = await axios.get('http://localhost:1337/api/posts')
+    const postRes = await axios.get(`${API_URL}/api/posts`)
     const paths = postRes.data.data.map((post)=>{
         return{params:{id: post.id.toString()}};
     });

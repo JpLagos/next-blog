@@ -14,7 +14,7 @@ const posts = ({posts}) => {
 export default posts
 
 export async function getServerSideProps() {
-    const PostRes = await axios.get(`http://localhost:1337/api/posts?populate=*`);
+    const PostRes = await axios.get(`https://strapi-lagos.herokuapp.com/api/posts?populate=*`);
 
     return {
         props: {
