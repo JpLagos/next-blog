@@ -1,6 +1,6 @@
 import React ,{useState, useEffect} from 'react'
 import JsonData from '../data/data.json'
-import Link from 'next/link'
+
 
 const SideBar = () => {
   const [data, setData] = useState([])
