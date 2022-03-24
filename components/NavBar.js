@@ -1,6 +1,6 @@
 import Link from "next/Link";
 import React, { useState } from "react";
-import SocialMedia from "./socialMedia";
+import SocialMedia from "./SocialMedia";
 
 const NavBar = () => {
     const [isActive, setActive] = useState('false');
