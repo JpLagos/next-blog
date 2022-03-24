@@ -4,7 +4,7 @@ import { API_URL } from "../utils/urls";
 
 
 const Home = ({posts}) => {
-  
+  console.log(API_URL)
   return (
 
     <div className="md:p-0 flex justify-start">
