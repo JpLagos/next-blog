@@ -58,7 +58,7 @@ const PostPage = ({post}) => {
 
 export default PostPage;
 
-export async function getServerSideProps({params}){
+export async function getStaticProps({params}){
     //obtain data
     const postRes = await axios.get(`${API_URL}/api/posts/${params.id}?populate=*`);
     return{
