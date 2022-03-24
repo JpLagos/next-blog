@@ -12,8 +12,8 @@ const NavBar = () => {
         <div className="container mx-auto max-w-6xl">
             <div className="flex justify-center lg:justify-between">
                 <div className="flex justify-left items-center">
-                    <Link href="/">
-                        <a className="text-6xl font-bold">Logo</a>
+                    <Link href="/"
+                    className="text-6xl font-bold">Logo
                     </Link>
                 </div>
                 <SocialMedia md={"hidden sm:hidden mr-12"}/>
@@ -33,7 +33,7 @@ const NavBar = () => {
                 <ul className=" flex justify-end ml-4 md:ml-0">
                     <li className="flex flex-col mr-10 md:mt-2 lg:flex-row">
 
-                        <Link href="/">
+                        <Link href="/" passHref>
                             <a className="text-2xl text-zinc-300 mr-3 hover:text-zinc-400 
                                         border-b-2 border-darkColor hover:border-b-2 my-1 mx-5
                                         hover:border-orange 
@@ -45,7 +45,7 @@ const NavBar = () => {
                                             Inicio</a>
                         </Link>
 
-                        <Link href="/posts">
+                        <Link href="/posts" passHref>
                             <a className="text-2xl text-zinc-300 mr-3 hover:text-zinc-400
                                         border-b-2 border-darkColor hover:border-b-2 my-1 mx-5
                                         hover:border-orange 
@@ -57,7 +57,7 @@ const NavBar = () => {
                                             Posts</a>
                         </Link>
 
-                        <Link href="/contact">
+                        <Link href="/contact" passHref>
                             <a className="text-2xl text-zinc-300 mr-3 hover:text-zinc-400
                                         border-b-2 border-darkColor hover:border-b-2 my-1 mx-5
                                         hover:border-orange 
