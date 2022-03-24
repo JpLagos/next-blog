@@ -5,6 +5,7 @@ import { API_URL } from "../utils/urls";
 
 const Home = ({posts}) => {
   console.log(API_URL)
+  console.log(posts)
   return (
 
     <div className="md:p-0 flex justify-start">
