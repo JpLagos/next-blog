@@ -18,11 +18,11 @@ const NavBar = () => {
                 </div>
                 <SocialMedia md={"hidden sm:hidden mr-12"}/>
             </div>
-            <div class="block flex justify-end md:justify-between px-4 lg:hidden">    
+            <div className="block flex justify-end md:justify-between px-4 lg:hidden">    
 
                 <SocialMedia md={"hidden sm:hidden md:flex"}/>
-                <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" onClick={handleToggle}>
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <button id='boton' className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" onClick={handleToggle}>
+                    <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                     </svg>

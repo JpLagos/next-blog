@@ -16,6 +16,7 @@ const PostPreview = ({post}) => {
                   post.attributes.images.data ? post.attributes.images.data.map(formats =>(
                     <Image
                       src={orig + formats.attributes.url}
+                      key={orig + formats.attributes.id}
                       alt="Picture of the author"
                       width={200}
                       height={180}
