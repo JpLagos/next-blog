@@ -23,7 +23,7 @@ export default Home;
 
 export async function getServerSideProps() {
   const postRes = await axios.get(`${API_URL}/api/posts?populate=*`);
-
+  console.log(postRes)
   return {
     props: {
       posts: postRes.data.data
