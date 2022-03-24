@@ -44,7 +44,9 @@ const PostPage = ({post}) => {
             </header>
             {/* <section className='text-xl text-stone-600 m-2 flex flex-wrap' dangerouslySetInnerHTML={{__html: htmlContent}}></section> */}
             <div className="prose-xl p-2 md:p-0">
-                <ReactMarkdown className='prose' children={markdown}/>
+                <ReactMarkdown className='prose'>
+                    {markdown}
+                </ReactMarkdown>
             </div>
         </article>
              </div>
