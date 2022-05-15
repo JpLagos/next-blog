@@ -1,6 +1,4 @@
 import React from "react";
-
-
 const HomeHeader = () =>{
     return(
         <header className="p-4">

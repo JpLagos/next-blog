@@ -15,7 +15,7 @@ const posts = ({posts}) => {
 export default posts
 
 export async function getServerSideProps() {
-    const PostRes = await axios.get(`${API_URL}/api/posts?populate=*`); //cambiar url
+    const PostRes = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/posts?populate=*`);
 
     return {
         props: {

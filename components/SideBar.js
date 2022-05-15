@@ -2,7 +2,9 @@ import React ,{useState, useEffect} from 'react'
 import JsonData from '../data/data.json'
 
 
-const SideBar = () => {
+const SideBar = (props) => {
+
+  
   const [data, setData] = useState([])
   useEffect(()=>{
     setData(JsonData);
@@ -11,7 +13,7 @@ const SideBar = () => {
   return (
     <div className='flex align-center flex-col inline sm:hidden lg:inline w-96 my-10 mx-4'>
         <div className='bg-blu flex justify-start mt-4'>
-            <span className='text-white text-xl align-center px-3 pb-1'>Tecnologias usadas:</span>
+            <span className='text-white text-xl align-center px-3 pb-1'>{props.data ? props.data.title : 'Loading..'}</span>
         </div>
 
         <div className='bg-white flex flex-wrap'>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import SocialMedia from "./SocialMedia";
 
-const NavBar = () => {
+const NavBar = (props) => {
     const [isActive, setActive] = useState('false');
     const handleToggle = () =>{
         setActive(!isActive)
@@ -12,8 +12,10 @@ const NavBar = () => {
         <div className="container mx-auto max-w-6xl">
             <div className="flex justify-center lg:justify-between">
                 <div className="flex justify-left items-center">
-                    <Link href="/"
-                    className="text-6xl font-bold">Logo
+                    <Link href="/">
+                        <h1 className="text-6xl font-bold cursor-pointer">
+                            {props.data ? props.data.pageLogo : 'Loading'}
+                        </h1>
                     </Link>
                 </div>
                 <SocialMedia md={"hidden sm:hidden mr-12"}/>
@@ -29,7 +31,7 @@ const NavBar = () => {
                 </button>
             </div>
 
-            <div className={isActive ? "hidden lg:inline-block lg:pt-4 lg:mt-4 w-full" : "visible" } >
+            <div className={isActive ? "hidden lg:inline-block lg:pt-4 lg:mt-4 w-full" : "visible absolute bg-dark w-full flex justify-end" } >
                 <ul className=" flex justify-end ml-4 md:ml-0">
                     <li className="flex flex-col mr-10 md:mt-2 lg:flex-row">
 

@@ -10,7 +10,7 @@ const ContactForm = (
 >
 <input type="hidden" name="form-name" value="contact-form" />
 
-    <label htmlFor="name">Name *</label>
+    <label htmlFor="name">Nombre *</label>
     <input
         id="name"
         name="name"
@@ -18,22 +18,23 @@ const ContactForm = (
         type="text"
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
     />
-    <label htmlFor="company">Company *</label>
-    <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="company" name="company" required type="text" />
-    <label htmlFor="email">E-mail Address *</label>
+    <label htmlFor="email">E-mail *</label>
     <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="email" type="email" name="email" required />
-    <label htmlFor="message">Message *</label>
+    <label htmlFor="message">Mensaje *</label>
     <textarea className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="message" name="message" required></textarea>
-    <button className="bg-lightBlu m-2 text-white rounded" type="submit">Submit</button>
+    <button className="bg-lightBlu m-2 text-white rounded w-1/4 p-1 hover:bg-orange hover:text-dark" type="submit">Submit</button>
 </form>
 )
 
 
 const contact = () => {
   return (
-    <div>
-        <h1>Contactame!</h1>
+    <div className='w-4/5 m-auto md:w-3/5 my-10'>
+      <div className='max-w-xl'>
+
+        <h1>Coming soon!</h1>
         {ContactForm}
+      </div>
     
     </div>
   )

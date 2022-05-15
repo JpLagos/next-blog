@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
+//Not my fav component, But it works.
 const RecommendedRead = () => {
   return (
     <div className='w-full bg-stone-200 flex justify-center py-1'>
@@ -14,17 +15,6 @@ const RecommendedRead = () => {
                                         hover:border-orange 
                                         transition ease-in-out duration-500'>My first Post!
                     </Link>
-                    {/* <Link href="/posts">
-                        <a className='border-b-2 border-stone-200 
-                                        hover:border-b-2
-                                        hover:border-orange 
-                                        transition ease-in-out duration-500'>Posts</a>
-                    </Link><Link href="/posts">
-                        <a className='border-b-2 border-stone-200 
-                                        hover:border-b-2
-                                        hover:border-orange 
-                                        transition ease-in-out duration-500'>Posts</a>
-                    </Link> */}
                 </li>
             </ul>
         </div>

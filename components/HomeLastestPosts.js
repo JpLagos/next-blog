@@ -14,7 +14,6 @@ const HomeLastestPosts = ({posts}) => {
         })
     }
   return(
-
       <div >
           {renderPostPreview()}
       </div>

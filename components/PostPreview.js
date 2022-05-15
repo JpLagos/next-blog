@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 const PostPreview = ({post}) => {
-  const orig = 'http://localhost:1337'
+  const orig = process.env.NEXT_PUBLIC_URL
   return (
       <Link href={`/posts/${post.id}`}>
           <div className='my-5 md:mx-0 pb-4 md:my-10 cursor-pointer border-b-2'>
@@ -18,7 +18,7 @@ const PostPreview = ({post}) => {
                       src={orig + formats.attributes.url}
                       key={orig + formats.attributes.id}
                       alt="Picture of the author"
-                      width={200}
+                      width={180}
                       height={180}
                       className="rounded"
                     />
